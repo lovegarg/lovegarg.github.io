@@ -6,15 +6,15 @@
 
   <!-- ── Primary SEO ──────────────────────────────────────────────────────── -->
   <title>Multilingual Pal – AI Photo Translator &amp; Language Tutor</title>
-  <meta name="description" content="Learn Spanish, French, and German with your personal AI language companion. Translate any photo instantly, chat with AI, build vocabulary with daily words, and track your streak.">
-  <meta name="keywords" content="language learning app, AI language tutor, photo translator, learn Spanish, learn French, learn German, vocabulary app, daily word, streak, Google Play">
+  <meta name="description" content="Learn Spanish, French, German, Italian, Portuguese, Hindi, Arabic, or Indonesian with your personal AI language companion. Translate any photo instantly, chat with AI, build vocabulary with daily words, track your streak, and get smart daily reminders — fully localised in 9 languages.">
+  <meta name="keywords" content="language learning app, AI language tutor, photo translator, learn Spanish, learn French, learn German, learn Italian, learn Portuguese, learn Hindi, learn Arabic, learn Indonesian, vocabulary app, daily word, streak, Google Play">
   <link rel="canonical" href="https://lovegarg.github.io/" />
 
   <!-- ── Open Graph (Facebook / LinkedIn / WhatsApp) ───────────────────── -->
   <meta property="og:type"        content="website" />
   <meta property="og:url"         content="https://lovegarg.github.io/" />
   <meta property="og:title"       content="Multilingual Pal – AI Photo Translator &amp; Language Tutor" />
-  <meta property="og:description" content="Point your camera at anything and start learning. AI chat, daily vocabulary, streaks, quizzes – all in one free app." />
+  <meta property="og:description" content="Point your camera at anything and start learning. AI chat, daily vocabulary, streaks, quizzes, smart reminders, and translation feedback – all in one free app, fully localised in 9 languages." />
   <meta property="og:image"       content="https://lovegarg.github.io/og-image.png" />
   <meta property="og:image:width"  content="1200" />
   <meta property="og:image:height" content="630" />
@@ -23,7 +23,7 @@
   <!-- ── Twitter Card ──────────────────────────────────────────────────── -->
   <meta name="twitter:card"        content="summary_large_image" />
   <meta name="twitter:title"       content="Multilingual Pal – AI Photo Translator &amp; Language Tutor" />
-  <meta name="twitter:description" content="Point your camera at anything and start learning. AI chat, daily vocabulary, streaks, quizzes – all in one free app." />
+  <meta name="twitter:description" content="Point your camera at anything and start learning. AI chat, daily vocabulary, streaks, quizzes, smart reminders, and translation feedback – all in one free app, fully localised in 9 languages." />
   <meta name="twitter:image"       content="https://lovegarg.github.io/og-image.png" />
 
   <!-- ── Schema.org: MobileApplication ────────────────────────────────── -->
@@ -32,7 +32,7 @@
     "@context": "https://schema.org",
     "@type": "MobileApplication",
     "name": "Multilingual Pal",
-    "description": "AI-powered language learning with photo translation, AI tutor, daily vocabulary, quizzes, and streak tracking.",
+    "description": "AI-powered language learning across 9 languages — Spanish, French, German, Italian, Portuguese, Hindi, Arabic, Indonesian, and English. Photo translation, AI tutor, daily vocabulary, quizzes, streak tracking, smart daily reminders, and translation feedback. Fully localised in all 9 languages.",
     "applicationCategory": "EducationApplication",
     "operatingSystem": "Android",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -242,8 +242,8 @@
     }
     .phone-frame {
       width: 260px;
-      height: 520px;
-      background: #1a1a2e;
+      height: 560px;
+      background: #111118;
       border-radius: 40px;
       padding: 14px;
       position: relative;
@@ -254,14 +254,14 @@
       top: 14px; left: 50%;
       transform: translateX(-50%);
       width: 72px; height: 6px;
-      background: #0d0d1a;
+      background: #080810;
       border-radius: 3px;
       z-index: 2;
     }
     .phone-screen {
       width: 100%;
       height: 100%;
-      background: #f5f6ff;
+      background: #f1f3f6;
       border-radius: 28px;
       overflow: hidden;
       display: flex;
@@ -270,7 +270,7 @@
 
     /* simulated app top bar */
     .app-topbar {
-      background: #f5f6ff;
+      background: #f1f3f6;
       padding: 22px 14px 10px;
       display: flex;
       align-items: center;
@@ -279,24 +279,24 @@
     .app-topbar-text .greeting {
       font-size: .68rem;
       font-weight: 800;
-      color: var(--text);
+      color: #1a1a2e;
     }
     .app-topbar-text .subtitle {
       font-size: .54rem;
-      color: var(--text-soft);
+      color: #8a8aa0;
     }
     .streak-chip {
-      background: rgba(92,107,192,.12);
+      background: rgba(255,100,100,.12);
       border-radius: 20px;
       padding: 4px 8px;
       font-size: .6rem;
       font-weight: 700;
-      color: var(--primary);
+      color: #e05555;
     }
     .avatar-dot {
       width: 26px; height: 26px;
       border-radius: 50%;
-      background: var(--grad);
+      background: linear-gradient(135deg, #c62a6e 0%, #e91e8c 100%);
       display: flex; align-items: center; justify-content: center;
       font-size: .6rem;
       font-weight: 800;
@@ -307,7 +307,7 @@
     .app-hero-card {
       margin: 6px 10px;
       border-radius: 16px;
-      background: var(--grad);
+      background: linear-gradient(135deg, #c62a6e 0%, #e91e8c 60%, #f06292 100%);
       padding: 14px;
       position: relative;
       overflow: hidden;
@@ -318,7 +318,7 @@
       top: -20px; right: -20px;
       width: 70px; height: 70px;
       border-radius: 50%;
-      background: rgba(255,255,255,.1);
+      background: rgba(255,255,255,.12);
     }
     .app-hero-label {
       font-size: .5rem;
@@ -345,32 +345,32 @@
 
     /* explore label + menu cards */
     .app-explore-label {
-      font-size: .5rem;
-      font-weight: 700;
-      color: var(--text-soft);
-      letter-spacing: .8px;
-      text-transform: uppercase;
+      font-size: .52rem;
+      font-weight: 600;
+      color: #8a8aa0;
+      letter-spacing: .3px;
       padding: 8px 10px 4px;
     }
     .app-menu-card {
       margin: 3px 10px;
       background: white;
-      border-radius: 10px;
-      padding: 7px 10px;
+      border-radius: 12px;
+      padding: 8px 10px;
       display: flex;
       align-items: center;
       gap: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.06);
     }
     .app-menu-icon {
-      width: 24px; height: 24px;
-      border-radius: 6px;
+      width: 28px; height: 28px;
+      border-radius: 8px;
       display: flex; align-items: center; justify-content: center;
-      font-size: .7rem;
+      font-size: .72rem;
       flex-shrink: 0;
     }
-    .app-menu-text .title { font-size: .58rem; font-weight: 700; color: var(--text); }
-    .app-menu-text .sub   { font-size: .48rem; color: var(--text-soft); }
-    .app-chevron { margin-left: auto; font-size: .5rem; color: var(--text-soft); }
+    .app-menu-text .title { font-size: .58rem; font-weight: 700; color: #1a1a2e; }
+    .app-menu-text .sub   { font-size: .48rem; color: #8a8aa0; }
+    .app-chevron { margin-left: auto; font-size: .5rem; color: #c0c0d0; }
 
     /* ── STATS STRIP ────────────────────────────────────────────────────── */
     .stats-strip {
@@ -755,7 +755,7 @@
     <div class="hero-inner">
 
       <div class="hero-text fade-in">
-        <!-- <div class="hero-badge">🏆 Tabby Awards 2025 Nominee &nbsp;·&nbsp; Best Phone App</div> -->
+<!--        <div class="hero-badge">🏆 Tabby Awards 2025 Nominee &nbsp;·&nbsp; Best Phone App</div>-->
         <h1>Learn Languages<br>from <span>Real&nbsp;Life</span></h1>
         <p class="hero-sub">
           Point your camera at any menu, sign, or document and get instant translation.
@@ -781,8 +781,8 @@
               <!-- simulated top bar -->
               <div class="app-topbar">
                 <div class="app-topbar-text">
-                  <div class="greeting">Hey, Alex! 👋</div>
-                  <div class="subtitle">Let's learn today</div>
+                  <div class="greeting">Hi, Alex! 👋</div>
+                  <div class="subtitle">Ready to learn today?</div>
                 </div>
                 <div style="display:flex;align-items:center;gap:6px">
                   <div class="streak-chip">🔥 12</div>
@@ -798,30 +798,38 @@
                 <div class="app-hero-emoji">👋</div>
               </div>
 
-              <div class="app-explore-label">EXPLORE</div>
+              <div class="app-explore-label">Explore</div>
 
               <!-- menu cards -->
               <div class="app-menu-card">
-                <div class="app-menu-icon" style="background:#e8eaff">💬</div>
+                <div class="app-menu-icon" style="background:#fce4ec">💬</div>
                 <div class="app-menu-text">
-                  <div class="title">AI Chat Tutor</div>
-                  <div class="sub">Ask anything, learn instantly</div>
+                  <div class="title">Translation Chat</div>
+                  <div class="sub">Translate words &amp; phrases</div>
                 </div>
                 <div class="app-chevron">›</div>
               </div>
               <div class="app-menu-card">
-                <div class="app-menu-icon" style="background:#fff3e0">📸</div>
+                <div class="app-menu-icon" style="background:#e8f5e9">🔖</div>
                 <div class="app-menu-text">
-                  <div class="title">Photo Translate</div>
-                  <div class="sub">Point, snap, understand</div>
+                  <div class="title">Daily Word</div>
+                  <div class="sub">Today's word to learn</div>
                 </div>
                 <div class="app-chevron">›</div>
               </div>
               <div class="app-menu-card">
-                <div class="app-menu-icon" style="background:#e8f5e9">📖</div>
+                <div class="app-menu-icon" style="background:#fff8e1">🖼️</div>
                 <div class="app-menu-text">
-                  <div class="title">Daily Vocabulary</div>
-                  <div class="sub">1 new word every day</div>
+                  <div class="title">Image Translate</div>
+                  <div class="sub">Translate text in photos &amp; PDFs</div>
+                </div>
+                <div class="app-chevron">›</div>
+              </div>
+              <div class="app-menu-card">
+                <div class="app-menu-icon" style="background:#fce4ec">🔴</div>
+                <div class="app-menu-text">
+                  <div class="title">Saved Words</div>
+                  <div class="sub">Your bookmarked vocabulary</div>
                 </div>
                 <div class="app-chevron">›</div>
               </div>
@@ -838,11 +846,11 @@
   <div class="stats-strip fade-in">
     <div class="stats-inner">
       <div class="stat-item">
-        <div class="stat-value">3</div>
+        <div class="stat-value">9</div>
         <div class="stat-label">Languages Supported</div>
       </div>
       <div class="stat-item">
-        <div class="stat-value">8+</div>
+        <div class="stat-value">10+</div>
         <div class="stat-label">Learning Features</div>
       </div>
       <div class="stat-item">
@@ -861,7 +869,7 @@
     <div class="container">
       <p class="section-label fade-in">Why Multilingual Pal</p>
       <h2 class="section-title fade-in">Everything you need to<br>master a language</h2>
-      <p class="section-sub fade-in">From photo snapping to daily quizzes — one app handles your entire language journey.</p>
+      <p class="section-sub fade-in">From photo snapping to smart reminders — one app handles your entire language journey, fully localised in 9 languages.</p>
 
       <div class="features-grid">
 
@@ -913,6 +921,18 @@
           <p>Save words and review materials without an internet connection — great for travel and commutes.</p>
         </div>
 
+        <div class="feature-card fade-in" style="transition-delay:.4s">
+          <div class="feature-icon-wrap">🔔</div>
+          <h3>Smart Daily Reminders</h3>
+          <p>Personalised 6 PM check-in fires only when you haven't practised yet. Three-tier streak-rescue messages keep your momentum going without feeling spammy.</p>
+        </div>
+
+        <div class="feature-card fade-in" style="transition-delay:.45s">
+          <div class="feature-icon-wrap">💬</div>
+          <h3>Translation Feedback</h3>
+          <p>Spot a translation issue? Tap the feedback button on any image result, describe the problem, attach screenshots, and send it directly to the team — in your own language.</p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -928,7 +948,7 @@
         <div class="step fade-in">
           <div class="step-number">1</div>
           <h3>Download &amp; Pick a Language</h3>
-          <p>Choose Spanish, French, or German and set up your profile in under a minute.</p>
+          <p>Choose from Spanish, French, German, Italian, Portuguese, Hindi, Arabic, Indonesian, or English and set up your profile in under a minute.</p>
         </div>
         <div class="step fade-in" style="transition-delay:.1s">
           <div class="step-number">2</div>
@@ -948,25 +968,44 @@
   <section class="languages-section" id="languages">
     <div class="container">
       <p class="section-label fade-in">Supported languages</p>
-      <h2 class="section-title fade-in">Start with the world's most spoken languages</h2>
+      <h2 class="section-title fade-in">9 languages and growing</h2>
 
       <div class="lang-grid">
         <div class="lang-card fade-in">
+          <span class="flag">🇺🇸</span>
+          English
+        </div>
+        <div class="lang-card fade-in" style="transition-delay:.06s">
           <span class="flag">🇪🇸</span>
           Spanish
         </div>
-        <div class="lang-card fade-in" style="transition-delay:.08s">
+        <div class="lang-card fade-in" style="transition-delay:.12s">
           <span class="flag">🇫🇷</span>
           French
         </div>
-        <div class="lang-card fade-in" style="transition-delay:.16s">
+        <div class="lang-card fade-in" style="transition-delay:.18s">
           <span class="flag">🇩🇪</span>
           German
         </div>
-        <div class="lang-card soon fade-in" style="transition-delay:.24s">
+        <div class="lang-card fade-in" style="transition-delay:.24s">
           <span class="flag">🇮🇹</span>
           Italian
-          <div><span class="soon-tag">Coming soon</span></div>
+        </div>
+        <div class="lang-card fade-in" style="transition-delay:.30s">
+          <span class="flag">🇧🇷</span>
+          Portuguese
+        </div>
+        <div class="lang-card fade-in" style="transition-delay:.36s">
+          <span class="flag">🇮🇳</span>
+          Hindi
+        </div>
+        <div class="lang-card fade-in" style="transition-delay:.42s">
+          <span class="flag">🇸🇦</span>
+          Arabic
+        </div>
+        <div class="lang-card fade-in" style="transition-delay:.48s">
+          <span class="flag">🇮🇩</span>
+          Indonesian
         </div>
       </div>
     </div>
@@ -996,7 +1035,7 @@
         <a href="https://sites.google.com/view/rules-privacy" target="_blank" rel="noopener">Privacy Policy</a>
         <a href="https://lovegarg.github.io/" >Home</a>
       </div>
-      <p class="footer-copy">© 2025 Multilingual Pal &nbsp;·&nbsp; Made with ❤️ for language learners worldwide</p>
+      <p class="footer-copy">© 2026 Multilingual Pal &nbsp;·&nbsp; Made with ❤️ for language learners worldwide</p>
     </div>
   </footer>
 
