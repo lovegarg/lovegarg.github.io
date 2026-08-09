@@ -695,6 +695,26 @@
       justify-content: center;
       flex-wrap: wrap;
     }
+    /* ── STORE BADGES ───────────────────────────────────────────────────── */
+    .badge-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .store-badge {
+      display: inline-block;
+      height: 56px;
+      line-height: 0;
+      border-radius: 9px;
+      transition: transform .2s ease, filter .2s ease, box-shadow .2s ease;
+    }
+    .store-badge svg { height: 100%; width: auto; display: block; }
+    .store-badge:hover {
+      transform: translateY(-3px);
+      filter: brightness(1.08);
+      box-shadow: 0 10px 26px rgba(0,0,0,.28);
+    }
     .cta-note {
       margin-top: 20px;
       font-size: .85rem;
@@ -809,17 +829,32 @@
           Point your camera at any menu, sign, or document and get instant translation.
           Then chat with your personal AI tutor to understand every word.
         </p>
-        <div class="hero-actions">
-          <a href="https://play.google.com/store/apps/details?id=io.multilingualpal.android"
-             class="btn-primary" target="_blank" rel="noopener">
-            🤖 &nbsp;Google Play
+        <div class="badge-row">
+          <a href="https://apps.apple.com/app/id6784734472" class="store-badge"
+             target="_blank" rel="noopener" aria-label="Download on the App Store">
+            <svg viewBox="0 0 130 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+              <rect x="0.5" y="0.5" width="129" height="39" rx="7" fill="#000" stroke="rgba(255,255,255,0.28)"/>
+              <path fill="#fff" transform="translate(12,8)" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
+              <text x="41" y="16" fill="#fff" font-family="'Plus Jakarta Sans',-apple-system,Roboto,sans-serif" font-size="7">Download on the</text>
+              <text x="40" y="31" fill="#fff" font-family="'Plus Jakarta Sans',-apple-system,Roboto,sans-serif" font-size="16" font-weight="600" letter-spacing="-0.3">App Store</text>
+            </svg>
           </a>
-          <a href="https://apps.apple.com/app/id6784734472"
-             class="btn-secondary" target="_blank" rel="noopener">
-             &nbsp;App Store
+          <a href="https://play.google.com/store/apps/details?id=io.multilingualpal.android" class="store-badge"
+             target="_blank" rel="noopener" aria-label="Get it on Google Play">
+            <svg viewBox="0 0 138 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+              <rect x="0.5" y="0.5" width="137" height="39" rx="7" fill="#000" stroke="rgba(255,255,255,0.28)"/>
+              <g transform="translate(11,8.5) scale(0.52)">
+                <path d="M5 4 L24 22 L5 40 Z"   fill="#00C3FF"/>
+                <path d="M5 4 L38 14 L24 22 Z"  fill="#FE3D44"/>
+                <path d="M24 22 L38 14 L38 30 Z" fill="#FFCE00"/>
+                <path d="M5 40 L24 22 L38 30 Z" fill="#00D871"/>
+              </g>
+              <text x="40" y="16" fill="#fff" font-family="'Plus Jakarta Sans',-apple-system,Roboto,sans-serif" font-size="6.5" font-weight="500" letter-spacing="0.6">GET IT ON</text>
+              <text x="39" y="31" fill="#fff" font-family="'Plus Jakarta Sans',-apple-system,Roboto,sans-serif" font-size="15" font-weight="600" letter-spacing="-0.2">Google Play</text>
+            </svg>
           </a>
         </div>
-        <div class="hero-actions" style="margin-top:14px">
+        <div class="hero-actions" style="margin-top:16px">
           <span class="hero-note">Free &nbsp;·&nbsp; No credit card &nbsp;·&nbsp; iOS &amp; Android</span>
         </div>
         <div class="hero-rating">
@@ -1070,14 +1105,29 @@
     <div class="cta-card fade-in">
       <h2>Start Learning for Free Today</h2>
       <p>Join thousands of learners who are picking up real languages<br>from real life — one photo, one word, one day at a time.</p>
-      <div class="cta-buttons">
-        <a href="https://play.google.com/store/apps/details?id=io.multilingualpal.android"
-           class="btn-download" target="_blank" rel="noopener">
-          🤖 &nbsp;Google Play
+      <div class="badge-row" style="justify-content:center">
+        <a href="https://apps.apple.com/app/id6784734472" class="store-badge"
+           target="_blank" rel="noopener" aria-label="Download on the App Store">
+          <svg viewBox="0 0 130 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+            <rect x="0.5" y="0.5" width="129" height="39" rx="7" fill="#000" stroke="rgba(255,255,255,0.28)"/>
+            <path fill="#fff" transform="translate(12,8)" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
+            <text x="41" y="16" fill="#fff" font-family="'Plus Jakarta Sans',-apple-system,Roboto,sans-serif" font-size="7">Download on the</text>
+            <text x="40" y="31" fill="#fff" font-family="'Plus Jakarta Sans',-apple-system,Roboto,sans-serif" font-size="16" font-weight="600" letter-spacing="-0.3">App Store</text>
+          </svg>
         </a>
-        <a href="https://apps.apple.com/app/id6784734472"
-           class="btn-download-alt" target="_blank" rel="noopener">
-           &nbsp;App Store
+        <a href="https://play.google.com/store/apps/details?id=io.multilingualpal.android" class="store-badge"
+           target="_blank" rel="noopener" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 138 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+            <rect x="0.5" y="0.5" width="137" height="39" rx="7" fill="#000" stroke="rgba(255,255,255,0.28)"/>
+            <g transform="translate(11,8.5) scale(0.52)">
+              <path d="M5 4 L24 22 L5 40 Z"   fill="#00C3FF"/>
+              <path d="M5 4 L38 14 L24 22 Z"  fill="#FE3D44"/>
+              <path d="M24 22 L38 14 L38 30 Z" fill="#FFCE00"/>
+              <path d="M5 40 L24 22 L38 30 Z" fill="#00D871"/>
+            </g>
+            <text x="40" y="16" fill="#fff" font-family="'Plus Jakarta Sans',-apple-system,Roboto,sans-serif" font-size="6.5" font-weight="500" letter-spacing="0.6">GET IT ON</text>
+            <text x="39" y="31" fill="#fff" font-family="'Plus Jakarta Sans',-apple-system,Roboto,sans-serif" font-size="15" font-weight="600" letter-spacing="-0.2">Google Play</text>
+          </svg>
         </a>
       </div>
       <p class="cta-note">Free to start &nbsp;·&nbsp; No credit card &nbsp;·&nbsp; iOS &amp; Android</p>
