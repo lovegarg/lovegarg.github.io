@@ -7,7 +7,7 @@
   <!-- ── Primary SEO ──────────────────────────────────────────────────────── -->
   <title>Multilingual Pal – AI Photo Translator &amp; Language Tutor</title>
   <meta name="description" content="Learn Spanish, French, German, Italian, Portuguese, Hindi, Arabic, or Indonesian with your personal AI language companion. Translate any photo instantly, chat with AI, build vocabulary with daily words, track your streak, and get smart daily reminders — fully localised in 9 languages.">
-  <meta name="keywords" content="language learning app, AI language tutor, photo translator, learn Spanish, learn French, learn German, learn Italian, learn Portuguese, learn Hindi, learn Arabic, learn Indonesian, vocabulary app, daily word, streak, Google Play">
+  <meta name="keywords" content="language learning app, AI language tutor, photo translator, learn Spanish, learn French, learn German, learn Italian, learn Portuguese, learn Hindi, learn Arabic, learn Indonesian, vocabulary app, daily word, streak, iOS, Android, App Store, Google Play, iPhone">
   <link rel="canonical" href="https://lovegarg.github.io/" />
 
   <!-- ── Open Graph (Facebook / LinkedIn / WhatsApp) ───────────────────── -->
@@ -34,10 +34,13 @@
     "name": "Multilingual Pal",
     "description": "AI-powered language learning across 9 languages — Spanish, French, German, Italian, Portuguese, Hindi, Arabic, Indonesian, and English. Photo translation, AI tutor, daily vocabulary, quizzes, streak tracking, smart daily reminders, and translation feedback. Fully localised in all 9 languages.",
     "applicationCategory": "EducationApplication",
-    "operatingSystem": "Android",
+    "operatingSystem": "Android, iOS",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
     "url": "https://lovegarg.github.io/",
-    "installUrl": "https://play.google.com/store/apps/details?id=io.multilingualpal.android"
+    "installUrl": [
+      "https://play.google.com/store/apps/details?id=io.multilingualpal.android",
+      "https://apps.apple.com/app/id6784734472"
+    ]
   }
   </script>
 
@@ -210,6 +213,26 @@
       transition: all .25s ease;
     }
     .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(0,0,0,.3);
+    }
+    /* dark "App Store" pill — pairs with the white Google Play button */
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #111118;
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 32px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+      border: 1px solid rgba(255,255,255,.35);
+      box-shadow: 0 6px 24px rgba(0,0,0,.2);
+      transition: all .25s ease;
+    }
+    .btn-secondary:hover {
       transform: translateY(-3px);
       box-shadow: 0 12px 32px rgba(0,0,0,.3);
     }
@@ -646,6 +669,32 @@
       transform: translateY(-3px);
       box-shadow: 0 14px 40px rgba(0,0,0,.3);
     }
+    /* dark "App Store" download pill inside the CTA card */
+    .btn-download-alt {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #111118;
+      color: #fff;
+      text-decoration: none;
+      padding: 16px 36px;
+      border-radius: 50px;
+      font-weight: 800;
+      font-size: 1.05rem;
+      border: 1px solid rgba(255,255,255,.4);
+      box-shadow: 0 8px 28px rgba(0,0,0,.22);
+      transition: all .25s ease;
+    }
+    .btn-download-alt:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 40px rgba(0,0,0,.3);
+    }
+    .cta-buttons {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
     .cta-note {
       margin-top: 20px;
       font-size: .85rem;
@@ -744,8 +793,7 @@
         <a href="#features">Features</a>
         <a href="#how-it-works">How It Works</a>
         <a href="#languages">Languages</a>
-        <a href="https://play.google.com/store/apps/details?id=io.multilingualpal.android"
-           class="nav-cta" target="_blank" rel="noopener">Download Free</a>
+        <a href="#download" class="nav-cta">Download Free</a>
       </div>
     </div>
   </nav>
@@ -764,9 +812,15 @@
         <div class="hero-actions">
           <a href="https://play.google.com/store/apps/details?id=io.multilingualpal.android"
              class="btn-primary" target="_blank" rel="noopener">
-            📱 &nbsp;Download on Google Play
+            🤖 &nbsp;Google Play
           </a>
-          <span class="hero-note">Free &nbsp;·&nbsp; No credit card</span>
+          <a href="https://apps.apple.com/app/id6784734472"
+             class="btn-secondary" target="_blank" rel="noopener">
+             &nbsp;App Store
+          </a>
+        </div>
+        <div class="hero-actions" style="margin-top:14px">
+          <span class="hero-note">Free &nbsp;·&nbsp; No credit card &nbsp;·&nbsp; iOS &amp; Android</span>
         </div>
         <div class="hero-rating">
           <span class="rating-text">✨ New &amp; growing — be an early learner</span>
@@ -1012,15 +1066,21 @@
   </section>
 
   <!-- ── CTA ───────────────────────────────────────────────────────────────── -->
-  <section class="cta-section">
+  <section class="cta-section" id="download">
     <div class="cta-card fade-in">
       <h2>Start Learning for Free Today</h2>
       <p>Join thousands of learners who are picking up real languages<br>from real life — one photo, one word, one day at a time.</p>
-      <a href="https://play.google.com/store/apps/details?id=io.multilingualpal.android"
-         class="btn-download" target="_blank" rel="noopener">
-        📱 &nbsp;Download on Google Play
-      </a>
-      <p class="cta-note">Free to start &nbsp;·&nbsp; No credit card &nbsp;·&nbsp; Android</p>
+      <div class="cta-buttons">
+        <a href="https://play.google.com/store/apps/details?id=io.multilingualpal.android"
+           class="btn-download" target="_blank" rel="noopener">
+          🤖 &nbsp;Google Play
+        </a>
+        <a href="https://apps.apple.com/app/id6784734472"
+           class="btn-download-alt" target="_blank" rel="noopener">
+           &nbsp;App Store
+        </a>
+      </div>
+      <p class="cta-note">Free to start &nbsp;·&nbsp; No credit card &nbsp;·&nbsp; iOS &amp; Android</p>
     </div>
   </section>
 
@@ -1031,6 +1091,7 @@
       <div class="footer-tagline">AI Photo Translator + Language Tutor</div>
       <div class="footer-links">
         <a href="https://play.google.com/store/apps/details?id=io.multilingualpal.android" target="_blank" rel="noopener">Google Play</a>
+        <a href="https://apps.apple.com/app/id6784734472" target="_blank" rel="noopener">App Store</a>
         <a href="mailto:lovegargmobile@gmail.com">Contact</a>
         <a href="https://sites.google.com/view/rules-privacy" target="_blank" rel="noopener">Privacy Policy</a>
         <a href="https://lovegarg.github.io/" >Home</a>
